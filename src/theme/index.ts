@@ -3,7 +3,8 @@ export default {
     WHITE: "#FFFFFF",
 
     RED: "#D82D2D",
-    BLACK: "#222222",
+    BLACK_LIGHT: "#222222",
+    BLACK_DARK: "#1A1A1A",
     BLUE: "#2478DF",
   },
   FONT_FAMILY: {
