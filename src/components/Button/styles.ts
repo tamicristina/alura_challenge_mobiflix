@@ -12,9 +12,10 @@ export const ButtonContainer = styled.TouchableOpacity<Props>`
   height: 42.31px;
   align-items: center;
   justify-content: center;
-  border-radius:8px
+  border-radius: 8px;
 `;
 
 export const ButtonLabel = styled.Text`
-color: ${({ theme }) => theme.COLORS.WHITE};
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  font-size: 18px;
 `;
