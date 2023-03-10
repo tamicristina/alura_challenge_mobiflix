@@ -9,9 +9,9 @@ type Props = {
 export const Container = styled.View`
   background-color: ${({ theme }) => theme.COLORS.BLACK_DARK};
   width: 100%;
-  height: 150px;
-  justify-content: center;
-  /* align-items: center; */
+  height: 120px;
+  justify-content:flex-end;
+  padding-bottom:10px
 `;
 
 export const Title = styled.Text<Props>`
