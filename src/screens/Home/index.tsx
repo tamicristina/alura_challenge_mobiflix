@@ -1,10 +1,12 @@
 import React from "react";
-import { ImageBackground, ScrollView, Text } from "react-native";
+import { ImageBackground, ScrollView } from "react-native";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Tag } from "../../components/Tag";
+import { categoriesColors } from "../../components/Tag/types";
 import { categories } from "../../services/dados";
-import { ButtonContainer, Container } from "./styles";
+import { ButtonContainer, Container, TagsContainer } from "./styles";
+  
 
 export function Home() {
   const image = { uri: "https://img.youtube.com/vi/N546dnt2qxc/hqdefault.jpg" };
@@ -28,9 +30,11 @@ export function Home() {
           <Button label="Assista agora" />
         </ButtonContainer>
       </ImageBackground>
-      <ScrollView>
-        {topCategoriesHighlights.map((category) => (<Tag label={category}/>))}
+      <TagsContainer>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        {topCategoriesHighlights.map((category, index) => (<Tag color={''} label={category}/>))}
       </ScrollView>
+      </TagsContainer>
     </Container>
   );
 }

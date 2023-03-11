@@ -14,3 +14,8 @@ export const ImageContainer = styled.View`
 export const ButtonContainer = styled.View`
   margin-bottom: 20;
 `;
+
+export const TagsContainer = styled.View`
+ width:100%;
+ justify-content: space-evenly;
+`;
