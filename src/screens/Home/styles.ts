@@ -12,10 +12,16 @@ export const ImageContainer = styled.View`
   justify-content: center;
 `;
 export const ButtonContainer = styled.View`
-  margin-bottom: 20;
+  margin-bottom: 20px;
 `;
 
-export const TagsContainer = styled.View`
- width:100%;
- justify-content: space-evenly;
+export const ScrollViewContainer = styled.ScrollView`
+  flex: 0.1;
+`;
+
+export const TagContainer = styled.View``;
+
+export const VideosContainer = styled.ScrollView`
+  flex: 1;
+ 
 `;
