@@ -5,7 +5,7 @@ export type ICategoriesTypes = {
   categories: string[];
 };
 
-export const categories: ICategoriesTypes[] = [
+export const videoData: ICategoriesTypes[] = [
   {
     nome: "Maggi",
     image: "https://img.youtube.com/vi/N546dnt2qxc/hqdefault.jpg",
@@ -14,26 +14,26 @@ export const categories: ICategoriesTypes[] = [
   },
   {
     nome: "Naruto",
-    image: "https://img.youtube.com/vi/N546dnt2qxc/fieqge7aYJM.jpg",
-    video: "https://img.youtube.com/vi/N546dnt2qxc/fieqge7aYJM.jpg",
+    image: "https://img.youtube.com/vi/VvkHL4FrnbE/hqdefault.jpg",
+    video: "https://img.youtube.com/vi/VvkHL4FrnbE/fieqge7aYJM.jpg",
     categories: ["Aventura", "Ação"],
   },
   {
     nome: "Spy x Family",
-    image: "https://img.youtube.com/vi/N546dnt2qxc/rYmgN3eQxVs.jpg",
-    video: "https://img.youtube.com/vi/N546dnt2qxc/rYmgN3eQxVs.jpg",
+    image: "https://img.youtube.com/vi/aecUbrAIaiU/hqdefault.jpg",
+    video: "https://img.youtube.com/vi/aecUbrAIaiU/hqdefault.jpg",
     categories: ["Aventura", "Ação", "Family"],
   },
   {
     nome: "Kimetsu No Yaba",
-    image: "https://img.youtube.com/vi/N546dnt2qxc/5adX1Bni4L4.jpg",
-    video: "https://img.youtube.com/vi/N546dnt2qxc/5adX1Bni4L4.jpg",
-    categories: ["Aventura", "Ação", "Magia","Terror"],
+    image: "https://img.youtube.com/vi/N546dnt2qxc/hqdefault.jpg",
+    video: "https://img.youtube.com/vi/N546dnt2qxc/hqdefault.jpg",
+    categories: ["Aventura", "Ação", "Magia", "Terror"],
   },
   {
     nome: "Kimetsu No Yaba",
-    image: "https://img.youtube.com/vi/N546dnt2qxc/rJzmAzQp6pk.jpg",
-    video: "https://img.youtube.com/vi/N546dnt2qxc/rJzmAzQp6pk.jpg",
-    categories: ["Aventura", "Ação", "Magia","Terror"],
+    image: "https://img.youtube.com/vi/KzviMMv0x4Q/hqdefault.jpg",
+    video: "https://img.youtube.com/vi/KzviMMv0x4Q/hqdefault.jpg",
+    categories: ["Aventura", "Ação", "Magia", "Terror"],
   },
 ];
