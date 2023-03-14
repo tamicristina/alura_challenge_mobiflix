@@ -5,30 +5,24 @@ export type ICategoriesColors = {
 
 export const categoriesColors: ICategoriesColors[] = [
   {
-    category:'Aventura',
-    color: "#2478DF"
-  }
-,
+    category: "Aventura",
+    color: "#2478DF",
+  },
   {
-    category:'Ação',
-    color: "#19940F"
-  }
-,
+    category: "Ação",
+    color: "#19940F",
+  },
   {
-    category:'Magia',
-    color: "#2478DF"
-  }
-,
+    category: "Family",
+    color: "#7B61FF",
+  },
   {
-    category:'Family',
-    color: "#7B61FF"
-  }
-,
-  {
-    category:'Terror',
-    color: "#D82D2D"
-  }
-,
+    category: "Magia",
+    color: "#2478DF",
+  },
 
-]
-
+  {
+    category: "Terror",
+    color: "#D82D2D",
+  },
+];

@@ -11,8 +11,8 @@ export const Container = styled.View<TagColorType>`
   background-color: ${({ color }) => color};
   justify-content: center;
   align-items: center;
-  margin: 0 18px;
   margin-top: 28px;
+  margin-right:18px
 `;
 
 export const Label = styled.Text`
