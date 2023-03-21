@@ -12,7 +12,7 @@ export const Container = styled.View<TagColorType>`
   justify-content: center;
   align-items: center;
   margin-top: 28px;
-  margin-right:18px
+  /* margin-right:18px */
 `;
 
 export const Label = styled.Text`

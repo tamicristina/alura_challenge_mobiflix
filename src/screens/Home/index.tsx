@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ImageBackground, ScrollView, View } from "react-native";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Tag } from "../../components/Tag";
-import { categoriesColors } from "../../components/Tag/types";
+import { Categories, colors } from "../../components/Tag/types";
 import { VideoPresentation } from "../../components/VideoPresentation";
 import { videoData } from "../../services/dados";
 import {
@@ -11,7 +11,6 @@ import {
   Container,
   ScrollViewContainer,
   TagContainer,
-  VideosContainer,
 } from "./styles";
 
 export function Home() {
@@ -37,28 +36,25 @@ export function Home() {
         </ButtonContainer>
       </ImageBackground>
 
-      <ScrollViewContainer horizontal>
-        {topCategoriesHighlights.map((category, index) => {
-          let colorAndCategory = categoriesColors[index];
-
-          if (category === colorAndCategory.category) {
-            return (
-              <TagContainer key={category}>
-                <Tag color={colorAndCategory.color} label={category} />
-              </TagContainer>
-            );
-          }
+      {/* <ScrollViewContainer horizontal>
+        {topCategoriesHighlights.map((category) => {
+          return (
+            <TagContainer key={category}>
+              <Tag color={colors[Categories.Ação].color} label={category} />
+            </TagContainer>
+          );
         })}
-      </ScrollViewContainer>
+      </ScrollViewContainer> */}
 
-      <VideosContainer>
+      {/* <VideosContainer>
         {videoData.map((video) => (
           <VideoPresentation
             video={video.image}
             categories={video.categories}
+            key={video.name}
           />
         ))}
-      </VideosContainer>
+      </VideosContainer> */}
     </Container>
   );
 }

@@ -1,28 +1,30 @@
-export type ICategoriesColors = {
-  category: string;
-  color: string;
-};
 
-export const categoriesColors: ICategoriesColors[] = [
-  {
-    category: "Aventura",
-    color: "#2478DF",
-  },
-  {
-    category: "Ação",
-    color: "#19940F",
-  },
-  {
-    category: "Family",
-    color: "#7B61FF",
-  },
-  {
-    category: "Magia",
-    color: "#2478DF",
-  },
+export enum Categories {
+  'Ação',
+  'Family',
+  'Magia',
+  'Terror'
+}
+export type CategoriesColorType = { color: string }
 
-  {
-    category: "Terror",
-    color: "#D82D2D",
+export type TypesContainer = { [key in Categories]: CategoriesColorType }
+
+export const colors: TypesContainer = {
+  [Categories.Ação]: {
+    color: '#19940F',
+   
   },
-];
+  [Categories.Family]: {
+    color: '#7B61FF',
+   
+  },
+  [Categories.Magia]: {
+    color: '#2478DF',
+   
+  },
+  [Categories.Terror]: {
+    color: '#D82D2D',
+   
+  },
+ 
+}
