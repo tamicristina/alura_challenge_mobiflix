@@ -36,15 +36,21 @@ export function Home() {
         </ButtonContainer>
       </ImageBackground>
 
-      {/* <ScrollViewContainer horizontal>
+      <ScrollViewContainer
+        horizontal
+        contentContainerStyle={{
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         {topCategoriesHighlights.map((category) => {
           return (
             <TagContainer key={category}>
-              <Tag color={colors[Categories.Ação].color} label={category} />
+              <Tag color={colors[Categories[category]]} label={category} />
             </TagContainer>
           );
         })}
-      </ScrollViewContainer> */}
+      </ScrollViewContainer>
 
       {/* <VideosContainer>
         {videoData.map((video) => (

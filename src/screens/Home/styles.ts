@@ -3,6 +3,7 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.BLACK_LIGHT};
+  align-items: center;
 `;
 
 export const ImageContainer = styled.View`
@@ -17,17 +18,12 @@ export const ButtonContainer = styled.View`
 
 export const ScrollViewContainer = styled.ScrollView`
   flex: 0.1;
-  background-color:red
-
 `;
 
 export const TagContainer = styled.View`
-justify-content:  space-between;
-flex-direction:row;
-width:100%
+  flex-direction: row;
 `;
 
 export const VideosContainer = styled.ScrollView`
   flex: 1;
- 
 `;
