@@ -1,13 +1,13 @@
 import React from "react";
 import { Image, ScrollView } from "react-native";
 import { Tag } from "../Tag";
-import { categoriesColors } from "../Tag/types";
+import { Categories, colors } from "../Tag/types";
 import { Container, ImageContainer, TagContainer, Images } from "./styles";
 import { StyleSheet } from "react-native";
 
 interface Props {
   video: string;
-  categories: string[];
+  categories: (keyof typeof Categories)[];
 }
 export function VideoPresentation({ categories, video }: Props) {
   return (
@@ -19,17 +19,17 @@ export function VideoPresentation({ categories, video }: Props) {
           flexDirection: "row",
         }}
       >
-        {categories.map((category, index) => {
-          let colorAndCategory = categoriesColors[index];
-
-          if (category === colorAndCategory.category) {
+        <TagContainer>
+          {categories.map((category) => {
             return (
-              <TagContainer key={category}>
-                <Tag color={colorAndCategory.color} label={category} />
-              </TagContainer>
+              <Tag
+                color={colors[Categories[category]]}
+                label={category}
+                key={category}
+              />
             );
-          }
-        })}
+          })}
+        </TagContainer>
       </ScrollView>
       <ImageContainer>
         <Images

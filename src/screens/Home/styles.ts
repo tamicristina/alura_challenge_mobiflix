@@ -22,6 +22,7 @@ export const ScrollViewContainer = styled.ScrollView`
 
 export const TagContainer = styled.View`
   flex-direction: row;
+  padding: 0 35px;
 `;
 
 export const VideosContainer = styled.ScrollView`

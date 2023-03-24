@@ -11,6 +11,7 @@ import {
   Container,
   ScrollViewContainer,
   TagContainer,
+  VideosContainer,
 } from "./styles";
 
 export function Home() {
@@ -43,24 +44,28 @@ export function Home() {
           justifyContent: "center",
         }}
       >
-        {topCategoriesHighlights.map((category) => {
-          return (
-            <TagContainer key={category}>
-              <Tag color={colors[Categories[category]]} label={category} />
-            </TagContainer>
-          );
-        })}
+        <TagContainer>
+          {topCategoriesHighlights.map((category) => {
+            return (
+              <Tag
+                color={colors[Categories[category]]}
+                label={category}
+                key={category}
+              />
+            );
+          })}
+        </TagContainer>
       </ScrollViewContainer>
 
-      {/* <VideosContainer>
-        {videoData.map((video) => (
+      <VideosContainer>
+        {videoData.slice(1).map((video) => (
           <VideoPresentation
             video={video.image}
             categories={video.categories}
             key={video.name}
           />
         ))}
-      </VideosContainer> */}
+      </VideosContainer>
     </Container>
   );
 }

@@ -3,12 +3,12 @@ import { Container, Label } from "./styles";
 
 interface Props {
   label: string;
-  color: string
+  color: string;
 }
 
 export function Tag({ label, color }: Props) {
   return (
-    <Container color={color} >
+    <Container color={color}>
       <Label>{label}</Label>
     </Container>
   );

@@ -3,12 +3,14 @@ import { Image } from "react-native";
 
 export const Container = styled.View`
   flex: 0.5;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
+  /* width:320px; */
+  margin: 0 35px;
 `;
 
 export const Images = styled(Image)`
-  width: 320px;
+  width: 335px;
   height: 180px;
   justify-content: center;
   align-items: center;
@@ -16,13 +18,13 @@ export const Images = styled(Image)`
   margin-top: 8px;
 `;
 export const ImageContainer = styled.View`
-  margin-left: 20px;
+  /* margin-left: 20px; */
 
   align-items: center;
 `;
 export const TagContainer = styled.View`
+  flex-direction: row;
   margin-bottom: 8px;
-  background-color: red;
 `;
 
 export const ScrollViewContainer = styled.ScrollView``;
